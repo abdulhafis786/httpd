@@ -1,0 +1,17 @@
+{
+  "name": "ram-httpd",
+  "version": "0.1.0",
+  "author": "ramanathana",
+  "summary": "install and configure webserver",
+  "license": "NA",
+  "source": "https://github.com/abdulhafis786/httpd.git",
+  "project_page": "https://github.com/abdulhafis786/httpd.git",
+  "issues_url": "ramanathanvijayan@gmail.com",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_range": ">= 1.0.0"
+    }
+  ]
+}
+
