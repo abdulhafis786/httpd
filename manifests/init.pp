@@ -35,7 +35,17 @@
 #
 # Copyright 2018 Your name here, unless otherwise noted.
 #
-class httpd {
+class httpd 
+(
+$user           = $httpd::params::user,
+$group          = $httpd::params::group,
+$mode           = $httpd::params::mode,
+$httpd_port     = $httpd::params::httpd_port,
+$httpd_conf_dir = $httpd::params::httpd_conf_dir,
+$package_name   = $httpd::params::package_name,
+) inherits httpd::params
+{
 
 include httpd::install
+include httpd::usercreation
 }
